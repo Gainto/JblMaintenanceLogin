@@ -1,0 +1,49 @@
+{
+  "name": "jbl/maintenance-login-shopware6",
+  "description": "Shopware6 Plug-In which adds an password field to the maintenance page. When authenticated, client IP is being added to whitelist.",
+  "type": "shopware-platform-plugin",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Jeffry Block",
+      "homepage": "https://www.jeffblock.de"
+    }
+  ],
+  "require": {
+    "shopware/core": "~6.5.0"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "~3.0",
+    "phpstan/phpstan": "^0.12.18"
+  },
+  "scripts": {
+    "cs-fixer": "php-cs-fixer fix",
+    "phpstan": "phpstan analyse"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "JblMaintenanceLogin\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "JblMaintenanceLogin\\JblMaintenanceLogin",
+    "copyright": "(c) by Jeffry Block",
+    "label": {
+      "de-DE": "Wartungsmodus Login",
+      "en-GB": "Maintenance mode login"
+    },
+    "description": {
+      "de-DE": "Login mit Passwort auf der Wartungs-Seite",
+      "en-GB": "Login with password on the maintenance page"
+    },
+    "manufacturerLink": {
+      "de-DE": "https://github.com/gainto",
+      "en-GB": "https://github.com/gainto"
+    },
+    "supportLink": {
+      "de-DE": "https://github.com/gainto",
+      "en-GB": "https://github.com/gainto"
+    }
+  }
+}

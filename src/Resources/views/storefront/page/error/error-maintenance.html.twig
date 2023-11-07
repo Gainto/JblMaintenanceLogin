@@ -1,0 +1,17 @@
+{% sw_extends '@Storefront/storefront/page/error/error-maintenance.html.twig' %}
+
+{% block error_maintenance_main_content %}
+  {{ parent() }}
+
+    {% block error_maintenance_main_content_login %}
+        <div class="container mt-5">
+            <div id="jbl-maintenance-login" class="text-center">
+                <form action="{{ path('frontend.maintenance.login') }}" method="POST">
+                    <input type="password" name="login"/>
+                    <input type="submit" value="Login" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    {% endblock %}
+
+{% endblock %}
